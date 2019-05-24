@@ -117,6 +117,7 @@
         },
         "pyrsistent": {
             "hashes": [
+                "sha256:13c55c5e49585fd83f8765b033a9d37f0e5605e73104503272479bccde4ce701",
                 "sha256:16692ee739d42cf5e39cef8d27649a8c1fdb7aa99887098f1460057c5eb75c3a"
             ],
             "version": "==0.15.2"
@@ -173,14 +174,6 @@
             ],
             "index": "pypi",
             "version": "==0.5.3"
-        },
-        "colorama": {
-            "hashes": [
-                "sha256:05eed71e2e327246ad6b38c540c4a3117230b19679b875190486ddd2d721422d",
-                "sha256:f8ac84de7840f5b9c4e3347b3c1eaa50f7e49c2b07596221daec5edaabbd7c48"
-            ],
-            "markers": "sys_platform == 'win32'",
-            "version": "==0.4.1"
         },
         "coverage": {
             "hashes": [
