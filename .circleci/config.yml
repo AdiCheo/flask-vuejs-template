@@ -19,7 +19,7 @@ jobs:
           command: |
             sudo pip install pipenv 
             pipenv install --dev
-            npm install yarn -g
+            sudo npm install yarn -g
             yarn install 
       - save_cache:
           key: deps2-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
