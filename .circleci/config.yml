@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run: mkdir test-reports
       - restore_cache:
-          key: deps2-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+          key: venv-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
       - run:
           command: |
             sudo pip install pipenv 
@@ -24,7 +24,7 @@ jobs:
             sudo npm install yarn -g
             yarn install 
       - save_cache:
-          key: deps2-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+          key: venv-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
           paths:
             - 'venv'
       - run:
