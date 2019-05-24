@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -20,7 +20,7 @@ jobs:
       - run:
           command: |
             sudo pip install pipenv 
-            pipenv install
+            pipenv install --dev
       - save_cache:
           key: deps2-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
           paths:
