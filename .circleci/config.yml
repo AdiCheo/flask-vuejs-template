@@ -15,8 +15,6 @@ jobs:
     steps:
       - checkout
       - run: mkdir test-reports
-      - restore_cache:
-          key: deps2-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
       - run:
           command: |
             sudo pip install pipenv 
